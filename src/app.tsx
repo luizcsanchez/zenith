@@ -1,3 +1,12 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <div>Hello Router Dom!</div>,
+  },
+]);
+
 export function App() {
-  return <h1>Hello Zenith!</h1>;
+  return <RouterProvider router={router} />;
 }
